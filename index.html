@@ -18,6 +18,14 @@
     <script>
         tailwind.config = {
             theme: {
+                screens: {
+                    'xs': '400px',
+                    'sm': '640px',
+                    'md': '768px',
+                    'lg': '1024px',
+                    'xl': '1280px',
+                    '2xl': '1536px',
+                },
                 extend: {
                     colors: {
                         primary: '#2D6A4F',
@@ -175,49 +183,49 @@
                         seguro, confidencial y libre de juicios donde puedes explorar tus emociones y encontrar
                         nuevas perspectivas.
                     </p>
-                    <div class="grid grid-cols-2 gap-3 sm:gap-6">
-                        <div class="flex items-start space-x-3">
-                            <div class="bg-accent/30 p-2 rounded-lg">
-                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 gap-4 sm:gap-6">
+                        <div class="flex items-center space-x-3 bg-accent/10 p-3 rounded-xl">
+                            <div class="bg-accent/30 p-2 rounded-lg flex-shrink-0">
+                                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
                                 </svg>
                             </div>
-                            <div>
-                                <h4 class="font-semibold text-darkText">Empatía</h4>
-                                <p class="text-sm text-gray-500">Te escuchamos sin juzgar</p>
+                            <div class="min-w-0">
+                                <h4 class="font-semibold text-darkText text-sm sm:text-base">Empatía</h4>
+                                <p class="text-xs sm:text-sm text-gray-500">Te escuchamos sin juzgar</p>
                             </div>
                         </div>
-                        <div class="flex items-start space-x-3">
-                            <div class="bg-accent/30 p-2 rounded-lg">
-                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="flex items-center space-x-3 bg-accent/10 p-3 rounded-xl">
+                            <div class="bg-accent/30 p-2 rounded-lg flex-shrink-0">
+                                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                                 </svg>
                             </div>
-                            <div>
-                                <h4 class="font-semibold text-darkText">Confidencialidad</h4>
-                                <p class="text-sm text-gray-500">Tu privacidad es sagrada</p>
+                            <div class="min-w-0">
+                                <h4 class="font-semibold text-darkText text-sm sm:text-base">Confidencial</h4>
+                                <p class="text-xs sm:text-sm text-gray-500">Tu privacidad es sagrada</p>
                             </div>
                         </div>
-                        <div class="flex items-start space-x-3">
-                            <div class="bg-accent/30 p-2 rounded-lg">
-                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="flex items-center space-x-3 bg-accent/10 p-3 rounded-xl">
+                            <div class="bg-accent/30 p-2 rounded-lg flex-shrink-0">
+                                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                                 </svg>
                             </div>
-                            <div>
-                                <h4 class="font-semibold text-darkText">Profesionalismo</h4>
-                                <p class="text-sm text-gray-500">Formación continua</p>
+                            <div class="min-w-0">
+                                <h4 class="font-semibold text-darkText text-sm sm:text-base">Profesional</h4>
+                                <p class="text-xs sm:text-sm text-gray-500">Formación continua</p>
                             </div>
                         </div>
-                        <div class="flex items-start space-x-3">
-                            <div class="bg-accent/30 p-2 rounded-lg">
-                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="flex items-center space-x-3 bg-accent/10 p-3 rounded-xl">
+                            <div class="bg-accent/30 p-2 rounded-lg flex-shrink-0">
+                                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                                 </svg>
                             </div>
-                            <div>
-                                <h4 class="font-semibold text-darkText">Compromiso</h4>
-                                <p class="text-sm text-gray-500">Contigo en cada paso</p>
+                            <div class="min-w-0">
+                                <h4 class="font-semibold text-darkText text-sm sm:text-base">Compromiso</h4>
+                                <p class="text-xs sm:text-sm text-gray-500">Contigo en cada paso</p>
                             </div>
                         </div>
                     </div>
