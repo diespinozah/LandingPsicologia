@@ -163,6 +163,42 @@ textarea:valid:not(:placeholder-shown) {
    Responsive Adjustments
    ================================ */
 
+/* Small mobile devices (Samsung S24, iPhone, etc.) */
+@media (max-width: 480px) {
+    /* Reduce animation intensity on mobile */
+    .fade-in {
+        transform: translateY(15px);
+    }
+
+    /* Better touch targets */
+    button, a {
+        min-height: 44px;
+    }
+
+    /* Prevent horizontal overflow */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Adjust container padding */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* Fix hero section height for small screens */
+    #inicio {
+        min-height: auto;
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+    }
+
+    /* Better spacing for values grid */
+    .grid-cols-2 {
+        gap: 0.75rem;
+    }
+}
+
 @media (max-width: 768px) {
     /* Reduce animation intensity on mobile */
     .fade-in {
@@ -176,6 +212,17 @@ textarea:valid:not(:placeholder-shown) {
 
     #testimonialTrack:active {
         cursor: grabbing;
+    }
+
+    /* Better header on mobile */
+    #header nav {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+
+    /* Improve mobile menu */
+    #mobileMenu a {
+        padding: 0.75rem 1rem;
     }
 }
 

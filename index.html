@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <meta name="description" content="Consultorio de Psicología - Profesionales dedicados a tu bienestar mental. Terapia individual, de pareja y familiar.">
     <meta name="keywords" content="psicología, terapia, salud mental, bienestar, psicólogo, terapia de pareja, terapia familiar">
     <meta name="author" content="Consultorio de Psicología">
@@ -41,13 +41,13 @@
 
     <!-- Header/Navegación -->
     <header id="header" class="fixed w-full top-0 z-50 bg-white shadow-md transition-all duration-300">
-        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <nav class="container mx-auto px-4 py-3 sm:py-4 flex justify-between items-center">
             <!-- Logo -->
-            <a href="#" class="flex items-center space-x-2">
-                <svg class="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 24 24">
+            <a href="#" class="flex items-center space-x-1.5 sm:space-x-2">
+                <svg class="w-8 h-8 sm:w-10 sm:h-10 text-primary" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                 </svg>
-                <span class="text-xl font-semibold text-primary">MenteSerena</span>
+                <span class="text-lg sm:text-xl font-semibold text-primary">MenteSerena</span>
             </a>
 
             <!-- Desktop Menu -->
@@ -66,8 +66,8 @@
             </a>
 
             <!-- Mobile Menu Button -->
-            <button id="menuBtn" class="md:hidden text-primary focus:outline-none">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <button id="menuBtn" class="md:hidden text-primary focus:outline-none p-1">
+                <svg class="w-7 h-7 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path id="menuIcon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                 </svg>
             </button>
@@ -92,32 +92,32 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="inicio" class="min-h-screen flex items-center pt-20 bg-gradient-to-br from-background to-accent/20">
-        <div class="container mx-auto px-4 py-16">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+    <section id="inicio" class="min-h-screen flex items-center pt-16 sm:pt-20 bg-gradient-to-br from-background to-accent/20">
+        <div class="container mx-auto px-4 sm:px-6 py-8 sm:py-16">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
                 <div class="md:w-1/2 text-center md:text-left fade-in">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-darkText leading-tight mb-6">
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-darkText leading-tight mb-4 sm:mb-6">
                         Tu bienestar mental es nuestra <span class="text-primary">prioridad</span>
                     </h1>
-                    <p class="text-lg md:text-xl text-gray-600 mb-8">
+                    <p class="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8">
                         Acompañamos tu proceso de crecimiento personal con profesionalismo, empatía y un enfoque integral.
                         Encuentra el equilibrio que necesitas para vivir plenamente.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                        <a href="#contacto" class="bg-primary text-white px-8 py-4 rounded-full hover:bg-secondary transition-colors font-semibold text-lg">
+                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start">
+                        <a href="#contacto" class="bg-primary text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-secondary transition-colors font-semibold text-base sm:text-lg">
                             Agenda tu Primera Cita
                         </a>
-                        <a href="#servicios" class="border-2 border-primary text-primary px-8 py-4 rounded-full hover:bg-primary hover:text-white transition-colors font-semibold text-lg">
-                            Conoce Nuestros Servicios
+                        <a href="#servicios" class="border-2 border-primary text-primary px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-primary hover:text-white transition-colors font-semibold text-base sm:text-lg">
+                            Nuestros Servicios
                         </a>
                     </div>
                 </div>
-                <div class="md:w-1/2 fade-in">
+                <div class="md:w-1/2 fade-in w-full max-w-sm md:max-w-none mx-auto">
                     <div class="relative">
-                        <div class="absolute -top-4 -left-4 w-72 h-72 bg-accent/30 rounded-full blur-3xl"></div>
-                        <div class="absolute -bottom-4 -right-4 w-72 h-72 bg-primary/20 rounded-full blur-3xl"></div>
-                        <div class="relative bg-white rounded-3xl shadow-2xl p-8 transform hover:scale-105 transition-transform duration-300">
-                            <svg class="w-full h-64 text-primary/80" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="absolute -top-4 -left-4 w-48 sm:w-72 h-48 sm:h-72 bg-accent/30 rounded-full blur-3xl"></div>
+                        <div class="absolute -bottom-4 -right-4 w-48 sm:w-72 h-48 sm:h-72 bg-primary/20 rounded-full blur-3xl"></div>
+                        <div class="relative bg-white rounded-2xl sm:rounded-3xl shadow-2xl p-4 sm:p-8 transform hover:scale-105 transition-transform duration-300">
+                            <svg class="w-full h-48 sm:h-64 text-primary/80" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <!-- Illustration: Person in peaceful state -->
                                 <circle cx="200" cy="150" r="100" fill="currentColor" opacity="0.1"/>
                                 <circle cx="200" cy="120" r="40" fill="currentColor" opacity="0.3"/>
@@ -140,13 +140,13 @@
     </section>
 
     <!-- Sobre Nosotros -->
-    <section id="nosotros" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col lg:flex-row items-center gap-12">
-                <div class="lg:w-1/2 fade-in">
-                    <div class="relative">
-                        <div class="bg-accent/20 rounded-3xl p-8">
-                            <svg class="w-full h-80" viewBox="0 0 400 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <section id="nosotros" class="py-12 sm:py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+                <div class="lg:w-1/2 fade-in w-full">
+                    <div class="relative max-w-md mx-auto lg:max-w-none">
+                        <div class="bg-accent/20 rounded-2xl sm:rounded-3xl p-4 sm:p-8">
+                            <svg class="w-full h-56 sm:h-80" viewBox="0 0 400 320" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <!-- Office/Therapy room illustration -->
                                 <rect x="50" y="50" width="300" height="220" rx="20" fill="#2D6A4F" opacity="0.1"/>
                                 <rect x="80" y="180" width="100" height="60" rx="10" fill="#40916C" opacity="0.3"/>
@@ -161,21 +161,21 @@
                     </div>
                 </div>
                 <div class="lg:w-1/2 fade-in">
-                    <h2 class="text-3xl md:text-4xl font-bold text-darkText mb-6">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-darkText mb-4 sm:mb-6 text-center lg:text-left">
                         Sobre <span class="text-primary">Nosotros</span>
                     </h2>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
+                    <p class="text-gray-600 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
                         En <strong>MenteSerena</strong>, creemos que cada persona tiene el potencial de alcanzar
                         su mejor versión. Desde 2010, hemos acompañado a cientos de personas en su camino hacia
                         el bienestar emocional y mental.
                     </p>
-                    <p class="text-gray-600 mb-8 leading-relaxed">
+                    <p class="text-gray-600 mb-6 sm:mb-8 leading-relaxed text-sm sm:text-base">
                         Nuestro equipo de profesionales certificados trabaja con un enfoque humanista e integrador,
                         adaptando cada tratamiento a las necesidades únicas de cada paciente. Creamos un espacio
                         seguro, confidencial y libre de juicios donde puedes explorar tus emociones y encontrar
                         nuevas perspectivas.
                     </p>
-                    <div class="grid grid-cols-2 gap-6">
+                    <div class="grid grid-cols-2 gap-3 sm:gap-6">
                         <div class="flex items-start space-x-3">
                             <div class="bg-accent/30 p-2 rounded-lg">
                                 <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -227,28 +227,28 @@
     </section>
 
     <!-- Servicios -->
-    <section id="servicios" class="py-20 bg-background">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-3xl md:text-4xl font-bold text-darkText mb-4">
+    <section id="servicios" class="py-12 sm:py-20 bg-background">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="text-center mb-10 sm:mb-16 fade-in">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-darkText mb-3 sm:mb-4">
                     Nuestros <span class="text-primary">Servicios</span>
                 </h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">
+                <p class="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base px-2">
                     Ofrecemos una variedad de servicios terapéuticos diseñados para atender tus necesidades
                     específicas y ayudarte a alcanzar tu bienestar integral.
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
                 <!-- Servicio 1: Terapia Individual -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 fade-in group">
-                    <div class="bg-accent/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                        <svg class="w-8 h-8 text-primary group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 fade-in group">
+                    <div class="bg-accent/20 w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                        <svg class="w-6 h-6 sm:w-8 sm:h-8 text-primary group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-darkText mb-3">Terapia Individual</h3>
-                    <p class="text-gray-600 mb-4">
+                    <h3 class="text-lg sm:text-xl font-semibold text-darkText mb-2 sm:mb-3">Terapia Individual</h3>
+                    <p class="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">
                         Sesiones personalizadas para trabajar ansiedad, depresión, autoestima,
                         manejo del estrés y crecimiento personal.
                     </p>
@@ -261,14 +261,14 @@
                 </div>
 
                 <!-- Servicio 2: Terapia de Pareja -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 fade-in group">
-                    <div class="bg-accent/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                        <svg class="w-8 h-8 text-primary group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 fade-in group">
+                    <div class="bg-accent/20 w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                        <svg class="w-6 h-6 sm:w-8 sm:h-8 text-primary group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-darkText mb-3">Terapia de Pareja</h3>
-                    <p class="text-gray-600 mb-4">
+                    <h3 class="text-lg sm:text-xl font-semibold text-darkText mb-2 sm:mb-3">Terapia de Pareja</h3>
+                    <p class="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">
                         Mejora la comunicación, resuelve conflictos y fortalece los vínculos
                         afectivos con tu pareja en un espacio neutral.
                     </p>
@@ -281,14 +281,14 @@
                 </div>
 
                 <!-- Servicio 3: Terapia Familiar -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 fade-in group">
-                    <div class="bg-accent/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                        <svg class="w-8 h-8 text-primary group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 fade-in group">
+                    <div class="bg-accent/20 w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                        <svg class="w-6 h-6 sm:w-8 sm:h-8 text-primary group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-darkText mb-3">Terapia Familiar</h3>
-                    <p class="text-gray-600 mb-4">
+                    <h3 class="text-lg sm:text-xl font-semibold text-darkText mb-2 sm:mb-3">Terapia Familiar</h3>
+                    <p class="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">
                         Abordamos dinámicas familiares, mejoramos la comunicación entre
                         miembros y resolvemos conflictos intergeneracionales.
                     </p>
@@ -301,14 +301,14 @@
                 </div>
 
                 <!-- Servicio 4: Evaluaciones Psicológicas -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 fade-in group">
-                    <div class="bg-accent/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                        <svg class="w-8 h-8 text-primary group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 fade-in group">
+                    <div class="bg-accent/20 w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                        <svg class="w-6 h-6 sm:w-8 sm:h-8 text-primary group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-darkText mb-3">Evaluaciones Psicológicas</h3>
-                    <p class="text-gray-600 mb-4">
+                    <h3 class="text-lg sm:text-xl font-semibold text-darkText mb-2 sm:mb-3">Evaluaciones Psicológicas</h3>
+                    <p class="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">
                         Evaluaciones profesionales para diagnóstico, orientación vocacional,
                         informes periciales y certificaciones.
                     </p>
@@ -324,84 +324,84 @@
     </section>
 
     <!-- Equipo -->
-    <section id="equipo" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-3xl md:text-4xl font-bold text-darkText mb-4">
+    <section id="equipo" class="py-12 sm:py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="text-center mb-10 sm:mb-16 fade-in">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-darkText mb-3 sm:mb-4">
                     Nuestro <span class="text-primary">Equipo</span>
                 </h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">
+                <p class="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base px-2">
                     Profesionales comprometidos con tu bienestar, con amplia experiencia
                     y formación continua en las mejores técnicas terapéuticas.
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
                 <!-- Psicólogo 1 -->
-                <div class="bg-background rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 fade-in">
-                    <div class="bg-gradient-to-br from-primary to-secondary h-48 flex items-center justify-center">
-                        <div class="w-32 h-32 bg-white rounded-full flex items-center justify-center">
-                            <svg class="w-20 h-20 text-primary/50" fill="currentColor" viewBox="0 0 24 24">
+                <div class="bg-background rounded-xl sm:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 fade-in">
+                    <div class="bg-gradient-to-br from-primary to-secondary h-36 sm:h-48 flex items-center justify-center">
+                        <div class="w-24 h-24 sm:w-32 sm:h-32 bg-white rounded-full flex items-center justify-center">
+                            <svg class="w-14 h-14 sm:w-20 sm:h-20 text-primary/50" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
                             </svg>
                         </div>
                     </div>
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-semibold text-darkText mb-1">Dra. María González</h3>
-                        <p class="text-primary font-medium mb-3">Directora | Psicóloga Clínica</p>
-                        <p class="text-gray-600 text-sm mb-4">
+                    <div class="p-4 sm:p-6 text-center">
+                        <h3 class="text-lg sm:text-xl font-semibold text-darkText mb-1">Dra. María González</h3>
+                        <p class="text-primary font-medium mb-2 sm:mb-3 text-sm sm:text-base">Directora | Psicóloga Clínica</p>
+                        <p class="text-gray-600 text-xs sm:text-sm mb-3 sm:mb-4">
                             Especialista en terapia cognitivo-conductual con más de 15 años de experiencia.
                             Máster en Psicología Clínica y de la Salud.
                         </p>
-                        <div class="flex justify-center space-x-3">
-                            <span class="bg-accent/30 text-primary text-xs px-3 py-1 rounded-full">Ansiedad</span>
-                            <span class="bg-accent/30 text-primary text-xs px-3 py-1 rounded-full">Depresión</span>
+                        <div class="flex justify-center space-x-2 sm:space-x-3 flex-wrap gap-y-2">
+                            <span class="bg-accent/30 text-primary text-xs px-2 sm:px-3 py-1 rounded-full">Ansiedad</span>
+                            <span class="bg-accent/30 text-primary text-xs px-2 sm:px-3 py-1 rounded-full">Depresión</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Psicólogo 2 -->
-                <div class="bg-background rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 fade-in">
-                    <div class="bg-gradient-to-br from-secondary to-accent h-48 flex items-center justify-center">
-                        <div class="w-32 h-32 bg-white rounded-full flex items-center justify-center">
-                            <svg class="w-20 h-20 text-secondary/50" fill="currentColor" viewBox="0 0 24 24">
+                <div class="bg-background rounded-xl sm:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 fade-in">
+                    <div class="bg-gradient-to-br from-secondary to-accent h-36 sm:h-48 flex items-center justify-center">
+                        <div class="w-24 h-24 sm:w-32 sm:h-32 bg-white rounded-full flex items-center justify-center">
+                            <svg class="w-14 h-14 sm:w-20 sm:h-20 text-secondary/50" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
                             </svg>
                         </div>
                     </div>
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-semibold text-darkText mb-1">Dr. Carlos Ramírez</h3>
-                        <p class="text-primary font-medium mb-3">Psicólogo | Terapeuta de Pareja</p>
-                        <p class="text-gray-600 text-sm mb-4">
+                    <div class="p-4 sm:p-6 text-center">
+                        <h3 class="text-lg sm:text-xl font-semibold text-darkText mb-1">Dr. Carlos Ramírez</h3>
+                        <p class="text-primary font-medium mb-2 sm:mb-3 text-sm sm:text-base">Psicólogo | Terapeuta de Pareja</p>
+                        <p class="text-gray-600 text-xs sm:text-sm mb-3 sm:mb-4">
                             Especializado en terapia sistémica y de pareja. Diplomado en
                             Sexología Clínica y mediación familiar.
                         </p>
-                        <div class="flex justify-center space-x-3">
-                            <span class="bg-accent/30 text-primary text-xs px-3 py-1 rounded-full">Parejas</span>
-                            <span class="bg-accent/30 text-primary text-xs px-3 py-1 rounded-full">Familia</span>
+                        <div class="flex justify-center space-x-2 sm:space-x-3 flex-wrap gap-y-2">
+                            <span class="bg-accent/30 text-primary text-xs px-2 sm:px-3 py-1 rounded-full">Parejas</span>
+                            <span class="bg-accent/30 text-primary text-xs px-2 sm:px-3 py-1 rounded-full">Familia</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Psicólogo 3 -->
-                <div class="bg-background rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 fade-in">
-                    <div class="bg-gradient-to-br from-accent to-primary h-48 flex items-center justify-center">
-                        <div class="w-32 h-32 bg-white rounded-full flex items-center justify-center">
-                            <svg class="w-20 h-20 text-accent/50" fill="currentColor" viewBox="0 0 24 24">
+                <div class="bg-background rounded-xl sm:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 fade-in">
+                    <div class="bg-gradient-to-br from-accent to-primary h-36 sm:h-48 flex items-center justify-center">
+                        <div class="w-24 h-24 sm:w-32 sm:h-32 bg-white rounded-full flex items-center justify-center">
+                            <svg class="w-14 h-14 sm:w-20 sm:h-20 text-accent/50" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
                             </svg>
                         </div>
                     </div>
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-semibold text-darkText mb-1">Lic. Ana Martínez</h3>
-                        <p class="text-primary font-medium mb-3">Psicóloga Infantojuvenil</p>
-                        <p class="text-gray-600 text-sm mb-4">
+                    <div class="p-4 sm:p-6 text-center">
+                        <h3 class="text-lg sm:text-xl font-semibold text-darkText mb-1">Lic. Ana Martínez</h3>
+                        <p class="text-primary font-medium mb-2 sm:mb-3 text-sm sm:text-base">Psicóloga Infantojuvenil</p>
+                        <p class="text-gray-600 text-xs sm:text-sm mb-3 sm:mb-4">
                             Especialista en psicología infantil y adolescente. Formación en
                             terapia de juego y manejo de TDAH.
                         </p>
-                        <div class="flex justify-center space-x-3">
-                            <span class="bg-accent/30 text-primary text-xs px-3 py-1 rounded-full">Niños</span>
-                            <span class="bg-accent/30 text-primary text-xs px-3 py-1 rounded-full">Adolescentes</span>
+                        <div class="flex justify-center space-x-2 sm:space-x-3 flex-wrap gap-y-2">
+                            <span class="bg-accent/30 text-primary text-xs px-2 sm:px-3 py-1 rounded-full">Niños</span>
+                            <span class="bg-accent/30 text-primary text-xs px-2 sm:px-3 py-1 rounded-full">Adolescentes</span>
                         </div>
                     </div>
                 </div>
@@ -410,13 +410,13 @@
     </section>
 
     <!-- Testimonios -->
-    <section id="testimonios" class="py-20 bg-gradient-to-br from-primary to-secondary">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+    <section id="testimonios" class="py-12 sm:py-20 bg-gradient-to-br from-primary to-secondary">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="text-center mb-10 sm:mb-16 fade-in">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4">
                     Lo que dicen nuestros pacientes
                 </h2>
-                <p class="text-white/80 max-w-2xl mx-auto">
+                <p class="text-white/80 max-w-2xl mx-auto text-sm sm:text-base px-2">
                     Historias de transformación y crecimiento personal de quienes han confiado en nosotros.
                 </p>
             </div>
@@ -426,63 +426,63 @@
                 <div id="testimonialSlider" class="overflow-hidden">
                     <div id="testimonialTrack" class="flex transition-transform duration-500 ease-in-out">
                         <!-- Testimonio 1 -->
-                        <div class="w-full flex-shrink-0 px-4">
-                            <div class="bg-white rounded-3xl p-8 md:p-12 shadow-2xl">
-                                <div class="text-6xl text-accent mb-6">"</div>
-                                <p class="text-gray-600 text-lg md:text-xl mb-8 leading-relaxed">
+                        <div class="w-full flex-shrink-0 px-2 sm:px-4">
+                            <div class="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-12 shadow-2xl">
+                                <div class="text-4xl sm:text-6xl text-accent mb-3 sm:mb-6">"</div>
+                                <p class="text-gray-600 text-sm sm:text-lg md:text-xl mb-5 sm:mb-8 leading-relaxed">
                                     Llegué al consultorio en uno de los momentos más difíciles de mi vida.
                                     Gracias al acompañamiento profesional y empático, pude encontrar herramientas
                                     para manejar mi ansiedad y hoy me siento mucho mejor conmigo misma.
                                 </p>
                                 <div class="flex items-center">
-                                    <div class="w-12 h-12 bg-accent/30 rounded-full flex items-center justify-center mr-4">
-                                        <span class="text-primary font-bold">L.P.</span>
+                                    <div class="w-10 h-10 sm:w-12 sm:h-12 bg-accent/30 rounded-full flex items-center justify-center mr-3 sm:mr-4">
+                                        <span class="text-primary font-bold text-sm sm:text-base">L.P.</span>
                                     </div>
                                     <div>
-                                        <p class="font-semibold text-darkText">Laura P.</p>
-                                        <p class="text-sm text-gray-500">Paciente desde 2022</p>
+                                        <p class="font-semibold text-darkText text-sm sm:text-base">Laura P.</p>
+                                        <p class="text-xs sm:text-sm text-gray-500">Paciente desde 2022</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Testimonio 2 -->
-                        <div class="w-full flex-shrink-0 px-4">
-                            <div class="bg-white rounded-3xl p-8 md:p-12 shadow-2xl">
-                                <div class="text-6xl text-accent mb-6">"</div>
-                                <p class="text-gray-600 text-lg md:text-xl mb-8 leading-relaxed">
+                        <div class="w-full flex-shrink-0 px-2 sm:px-4">
+                            <div class="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-12 shadow-2xl">
+                                <div class="text-4xl sm:text-6xl text-accent mb-3 sm:mb-6">"</div>
+                                <p class="text-gray-600 text-sm sm:text-lg md:text-xl mb-5 sm:mb-8 leading-relaxed">
                                     La terapia de pareja salvó nuestra relación. Aprendimos a comunicarnos
                                     de manera efectiva y a entendernos mejor. El Dr. Ramírez fue fundamental
                                     en este proceso de reconexión.
                                 </p>
                                 <div class="flex items-center">
-                                    <div class="w-12 h-12 bg-accent/30 rounded-full flex items-center justify-center mr-4">
-                                        <span class="text-primary font-bold">M&R</span>
+                                    <div class="w-10 h-10 sm:w-12 sm:h-12 bg-accent/30 rounded-full flex items-center justify-center mr-3 sm:mr-4">
+                                        <span class="text-primary font-bold text-sm sm:text-base">M&R</span>
                                     </div>
                                     <div>
-                                        <p class="font-semibold text-darkText">Marcos y Rosa</p>
-                                        <p class="text-sm text-gray-500">Pacientes desde 2021</p>
+                                        <p class="font-semibold text-darkText text-sm sm:text-base">Marcos y Rosa</p>
+                                        <p class="text-xs sm:text-sm text-gray-500">Pacientes desde 2021</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Testimonio 3 -->
-                        <div class="w-full flex-shrink-0 px-4">
-                            <div class="bg-white rounded-3xl p-8 md:p-12 shadow-2xl">
-                                <div class="text-6xl text-accent mb-6">"</div>
-                                <p class="text-gray-600 text-lg md:text-xl mb-8 leading-relaxed">
+                        <div class="w-full flex-shrink-0 px-2 sm:px-4">
+                            <div class="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-12 shadow-2xl">
+                                <div class="text-4xl sm:text-6xl text-accent mb-3 sm:mb-6">"</div>
+                                <p class="text-gray-600 text-sm sm:text-lg md:text-xl mb-5 sm:mb-8 leading-relaxed">
                                     Mi hijo tenía problemas en el colegio y no sabíamos cómo ayudarlo.
                                     La Lic. Ana nos guió con paciencia y cariño. Hoy mi pequeño es un niño
                                     más seguro y feliz. Eternamente agradecidos.
                                 </p>
                                 <div class="flex items-center">
-                                    <div class="w-12 h-12 bg-accent/30 rounded-full flex items-center justify-center mr-4">
-                                        <span class="text-primary font-bold">C.M.</span>
+                                    <div class="w-10 h-10 sm:w-12 sm:h-12 bg-accent/30 rounded-full flex items-center justify-center mr-3 sm:mr-4">
+                                        <span class="text-primary font-bold text-sm sm:text-base">C.M.</span>
                                     </div>
                                     <div>
-                                        <p class="font-semibold text-darkText">Carmen M.</p>
-                                        <p class="text-sm text-gray-500">Paciente desde 2023</p>
+                                        <p class="font-semibold text-darkText text-sm sm:text-base">Carmen M.</p>
+                                        <p class="text-xs sm:text-sm text-gray-500">Paciente desde 2023</p>
                                     </div>
                                 </div>
                             </div>
@@ -491,7 +491,7 @@
                 </div>
 
                 <!-- Navigation Dots -->
-                <div class="flex justify-center mt-8 space-x-3">
+                <div class="flex justify-center mt-6 sm:mt-8 space-x-3">
                     <button class="testimonial-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-colors active" data-index="0"></button>
                     <button class="testimonial-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-colors" data-index="1"></button>
                     <button class="testimonial-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-colors" data-index="2"></button>
@@ -513,46 +513,46 @@
     </section>
 
     <!-- Contacto -->
-    <section id="contacto" class="py-20 bg-background">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-3xl md:text-4xl font-bold text-darkText mb-4">
+    <section id="contacto" class="py-12 sm:py-20 bg-background">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="text-center mb-10 sm:mb-16 fade-in">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-darkText mb-3 sm:mb-4">
                     <span class="text-primary">Contáctanos</span>
                 </h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">
+                <p class="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base px-2">
                     Estamos aquí para ayudarte. Completa el formulario y nos pondremos en contacto
                     contigo lo antes posible para agendar tu cita.
                 </p>
             </div>
 
-            <div class="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">
+            <div class="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-12 max-w-6xl mx-auto">
                 <!-- Formulario -->
                 <div class="lg:w-2/3 fade-in">
-                    <form id="contactForm" action="https://formspree.io/f/xojwldlr" method="POST" class="bg-white rounded-3xl p-8 shadow-lg">
-                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <form id="contactForm" action="https://formspree.io/f/xojwldlr" method="POST" class="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-lg">
+                        <div class="grid sm:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
                             <div>
-                                <label for="nombre" class="block text-darkText font-medium mb-2">Nombre completo *</label>
+                                <label for="nombre" class="block text-darkText font-medium mb-1.5 sm:mb-2 text-sm sm:text-base">Nombre completo *</label>
                                 <input type="text" id="nombre" name="nombre" required
-                                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-accent/30 outline-none transition-all"
+                                    class="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg sm:rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-accent/30 outline-none transition-all text-sm sm:text-base"
                                     placeholder="Tu nombre">
                             </div>
                             <div>
-                                <label for="email" class="block text-darkText font-medium mb-2">Correo electrónico *</label>
+                                <label for="email" class="block text-darkText font-medium mb-1.5 sm:mb-2 text-sm sm:text-base">Correo electrónico *</label>
                                 <input type="email" id="email" name="email" required
-                                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-accent/30 outline-none transition-all"
+                                    class="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg sm:rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-accent/30 outline-none transition-all text-sm sm:text-base"
                                     placeholder="tu@email.com">
                             </div>
                         </div>
-                        <div class="mb-6">
-                            <label for="telefono" class="block text-darkText font-medium mb-2">Teléfono</label>
+                        <div class="mb-4 sm:mb-6">
+                            <label for="telefono" class="block text-darkText font-medium mb-1.5 sm:mb-2 text-sm sm:text-base">Teléfono</label>
                             <input type="tel" id="telefono" name="telefono"
-                                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-accent/30 outline-none transition-all"
+                                class="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg sm:rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-accent/30 outline-none transition-all text-sm sm:text-base"
                                 placeholder="+1 234 567 8900">
                         </div>
-                        <div class="mb-6">
-                            <label for="servicio" class="block text-darkText font-medium mb-2">Servicio de interés</label>
+                        <div class="mb-4 sm:mb-6">
+                            <label for="servicio" class="block text-darkText font-medium mb-1.5 sm:mb-2 text-sm sm:text-base">Servicio de interés</label>
                             <select id="servicio" name="servicio"
-                                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-accent/30 outline-none transition-all">
+                                class="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg sm:rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-accent/30 outline-none transition-all text-sm sm:text-base">
                                 <option value="">Selecciona un servicio</option>
                                 <option value="individual">Terapia Individual</option>
                                 <option value="pareja">Terapia de Pareja</option>
@@ -561,20 +561,20 @@
                                 <option value="otro">Otro</option>
                             </select>
                         </div>
-                        <div class="mb-6">
-                            <label for="mensaje" class="block text-darkText font-medium mb-2">Mensaje *</label>
+                        <div class="mb-4 sm:mb-6">
+                            <label for="mensaje" class="block text-darkText font-medium mb-1.5 sm:mb-2 text-sm sm:text-base">Mensaje *</label>
                             <textarea id="mensaje" name="mensaje" rows="4" required
-                                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-accent/30 outline-none transition-all resize-none"
+                                class="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg sm:rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-accent/30 outline-none transition-all resize-none text-sm sm:text-base"
                                 placeholder="Cuéntanos brevemente cómo podemos ayudarte..."></textarea>
                         </div>
                         <button type="submit"
-                            class="w-full bg-primary text-white py-4 rounded-xl font-semibold hover:bg-secondary transition-colors flex items-center justify-center space-x-2">
+                            class="w-full bg-primary text-white py-3 sm:py-4 rounded-lg sm:rounded-xl font-semibold hover:bg-secondary transition-colors flex items-center justify-center space-x-2 text-sm sm:text-base">
                             <span>Enviar Mensaje</span>
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                             </svg>
                         </button>
-                        <p class="text-sm text-gray-500 mt-4 text-center">
+                        <p class="text-xs sm:text-sm text-gray-500 mt-3 sm:mt-4 text-center">
                             * Campos obligatorios. Tu información es confidencial.
                         </p>
                     </form>
@@ -582,9 +582,9 @@
 
                 <!-- Información de contacto -->
                 <div class="lg:w-1/3 fade-in">
-                    <div class="bg-white rounded-3xl p-8 shadow-lg mb-6">
-                        <h3 class="text-xl font-semibold text-darkText mb-6">Información de Contacto</h3>
-                        <div class="space-y-6">
+                    <div class="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-lg mb-4 sm:mb-6">
+                        <h3 class="text-lg sm:text-xl font-semibold text-darkText mb-4 sm:mb-6">Información de Contacto</h3>
+                        <div class="space-y-4 sm:space-y-6">
                             <div class="flex items-start space-x-4">
                                 <div class="bg-accent/20 p-3 rounded-xl">
                                     <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -634,9 +634,9 @@
                     </div>
 
                     <!-- Redes Sociales -->
-                    <div class="bg-white rounded-3xl p-8 shadow-lg">
-                        <h3 class="text-xl font-semibold text-darkText mb-4">Síguenos</h3>
-                        <div class="flex space-x-4">
+                    <div class="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-lg">
+                        <h3 class="text-lg sm:text-xl font-semibold text-darkText mb-3 sm:mb-4">Síguenos</h3>
+                        <div class="flex space-x-3 sm:space-x-4">
                             <a href="#" class="bg-accent/20 p-3 rounded-xl hover:bg-primary hover:text-white transition-colors group">
                                 <svg class="w-6 h-6 text-primary group-hover:text-white" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
@@ -665,18 +665,18 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-darkText text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
+    <footer class="bg-darkText text-white py-8 sm:py-12">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
                 <!-- Logo y descripción -->
-                <div class="md:col-span-2">
-                    <a href="#" class="flex items-center space-x-2 mb-4">
-                        <svg class="w-10 h-10 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                <div class="col-span-2">
+                    <a href="#" class="flex items-center space-x-2 mb-3 sm:mb-4">
+                        <svg class="w-8 h-8 sm:w-10 sm:h-10 text-accent" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                         </svg>
-                        <span class="text-xl font-semibold">MenteSerena</span>
+                        <span class="text-lg sm:text-xl font-semibold">MenteSerena</span>
                     </a>
-                    <p class="text-gray-400 mb-4 max-w-md">
+                    <p class="text-gray-400 mb-4 max-w-md text-sm sm:text-base">
                         Consultorio de psicología dedicado a tu bienestar mental.
                         Profesionales comprometidos con tu crecimiento personal y emocional.
                     </p>
@@ -684,8 +684,8 @@
 
                 <!-- Links rápidos -->
                 <div>
-                    <h4 class="font-semibold text-lg mb-4">Enlaces Rápidos</h4>
-                    <ul class="space-y-2">
+                    <h4 class="font-semibold text-base sm:text-lg mb-3 sm:mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-1.5 sm:space-y-2 text-sm sm:text-base">
                         <li><a href="#inicio" class="text-gray-400 hover:text-accent transition-colors">Inicio</a></li>
                         <li><a href="#nosotros" class="text-gray-400 hover:text-accent transition-colors">Nosotros</a></li>
                         <li><a href="#servicios" class="text-gray-400 hover:text-accent transition-colors">Servicios</a></li>
@@ -696,8 +696,8 @@
 
                 <!-- Servicios -->
                 <div>
-                    <h4 class="font-semibold text-lg mb-4">Servicios</h4>
-                    <ul class="space-y-2">
+                    <h4 class="font-semibold text-base sm:text-lg mb-3 sm:mb-4">Servicios</h4>
+                    <ul class="space-y-1.5 sm:space-y-2 text-sm sm:text-base">
                         <li><a href="#servicios" class="text-gray-400 hover:text-accent transition-colors">Terapia Individual</a></li>
                         <li><a href="#servicios" class="text-gray-400 hover:text-accent transition-colors">Terapia de Pareja</a></li>
                         <li><a href="#servicios" class="text-gray-400 hover:text-accent transition-colors">Terapia Familiar</a></li>
@@ -706,13 +706,13 @@
                 </div>
             </div>
 
-            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+            <div class="border-t border-gray-700 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p class="text-gray-400 text-xs sm:text-sm text-center sm:text-left">
                     &copy; 2024 MenteSerena. Todos los derechos reservados.
                 </p>
-                <div class="flex space-x-6 text-sm">
-                    <a href="#" class="text-gray-400 hover:text-accent transition-colors">Política de Privacidad</a>
-                    <a href="#" class="text-gray-400 hover:text-accent transition-colors">Términos de Uso</a>
+                <div class="flex space-x-4 sm:space-x-6 text-xs sm:text-sm">
+                    <a href="#" class="text-gray-400 hover:text-accent transition-colors">Privacidad</a>
+                    <a href="#" class="text-gray-400 hover:text-accent transition-colors">Términos</a>
                 </div>
             </div>
         </div>
