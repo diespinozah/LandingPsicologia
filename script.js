@@ -1,5 +1,6 @@
 /**
- * MenteSerena - Landing Page JavaScript
+ * Axia - Landing Page JavaScript
+ * Consultora en Desarrollo Organizacional
  * =====================================
  * Handles: Mobile menu, smooth scroll, animations, testimonial slider, form validation
  */
@@ -238,7 +239,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ================================
-    // Contact Form Handling
+    // Contact Form Handling (B2B)
     // ================================
     const contactForm = document.getElementById('contactForm');
 
@@ -260,16 +261,18 @@ document.addEventListener('DOMContentLoaded', function() {
             `;
 
             try {
-                // Obtener datos del formulario como objeto
+                // Get form data as object (B2B fields)
                 const formData = {
                     nombre: contactForm.querySelector('#nombre').value,
+                    organizacion: contactForm.querySelector('#organizacion').value,
+                    cargo: contactForm.querySelector('#cargo').value,
                     email: contactForm.querySelector('#email').value,
                     telefono: contactForm.querySelector('#telefono').value,
-                    servicio: contactForm.querySelector('#servicio').value,
+                    tipoServicio: contactForm.querySelector('#tipoServicio').value,
                     mensaje: contactForm.querySelector('#mensaje').value,
                 };
 
-                // Enviar a Netlify Function
+                // Send to Netlify Function
                 const response = await fetch('/.netlify/functions/send-email', {
                     method: 'POST',
                     headers: {
@@ -282,7 +285,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 if (response.ok && result.success) {
                     // Success message
-                    showFormMessage('success', '¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.');
+                    showFormMessage('success', '¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto para agendar una reunión.');
                     contactForm.reset();
                 } else {
                     throw new Error(result.error || 'Error en el envío');
@@ -290,7 +293,13 @@ document.addEventListener('DOMContentLoaded', function() {
             } catch (error) {
                 // Error message
                 console.error('Error:', error);
-                showFormMessage('error', 'Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo o contáctanos directamente.');
+
+                // Check if running from file:// protocol (local file without server)
+                if (window.location.protocol === 'file:') {
+                    showFormMessage('error', 'El formulario requiere un servidor para funcionar. Para probar localmente, ejecuta "netlify dev" en la terminal. Una vez desplegado en Netlify, funcionará correctamente.');
+                } else {
+                    showFormMessage('error', 'Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo o contáctanos directamente por email a contacto@axia.cl');
+                }
             } finally {
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = originalBtnText;
@@ -385,6 +394,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // ================================
     // Console welcome message
     // ================================
-    console.log('%c¡Bienvenido a MenteSerena! 🧠✨', 'color: #2D6A4F; font-size: 20px; font-weight: bold;');
-    console.log('%cSi necesitas ayuda con el sitio web, contáctanos.', 'color: #40916C; font-size: 14px;');
+    console.log('%c¡Bienvenido a Axia! 🎯', 'color: #1E3A5F; font-size: 20px; font-weight: bold;');
+    console.log('%cConsultoría en Desarrollo Organizacional', 'color: #3D8B7A; font-size: 14px;');
 });
