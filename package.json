@@ -1,0 +1,11 @@
+{
+  "name": "menteserena-landing",
+  "version": "1.0.0",
+  "description": "Landing page para consultorio de psicología",
+  "scripts": {
+    "dev": "netlify dev"
+  },
+  "dependencies": {
+    "resend": "^2.0.0"
+  }
+}

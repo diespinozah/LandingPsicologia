@@ -260,24 +260,36 @@ document.addEventListener('DOMContentLoaded', function() {
             `;
 
             try {
-                const formData = new FormData(contactForm);
-                const response = await fetch(contactForm.action, {
+                // Obtener datos del formulario como objeto
+                const formData = {
+                    nombre: contactForm.querySelector('#nombre').value,
+                    email: contactForm.querySelector('#email').value,
+                    telefono: contactForm.querySelector('#telefono').value,
+                    servicio: contactForm.querySelector('#servicio').value,
+                    mensaje: contactForm.querySelector('#mensaje').value,
+                };
+
+                // Enviar a Netlify Function
+                const response = await fetch('/.netlify/functions/send-email', {
                     method: 'POST',
-                    body: formData,
                     headers: {
-                        'Accept': 'application/json'
-                    }
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData),
                 });
 
-                if (response.ok) {
+                const result = await response.json();
+
+                if (response.ok && result.success) {
                     // Success message
                     showFormMessage('success', '¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.');
                     contactForm.reset();
                 } else {
-                    throw new Error('Error en el envío');
+                    throw new Error(result.error || 'Error en el envío');
                 }
             } catch (error) {
                 // Error message
+                console.error('Error:', error);
                 showFormMessage('error', 'Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo o contáctanos directamente.');
             } finally {
                 submitBtn.disabled = false;
